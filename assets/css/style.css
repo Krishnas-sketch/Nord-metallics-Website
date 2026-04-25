@@ -1326,7 +1326,7 @@ footer a:hover {
 .footer-brand-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -1382,6 +1382,63 @@ footer a:hover {
 }
 
 @media (max-width: 1080px) {
+  .home-hero {
+    background-image:
+      linear-gradient(90deg, rgba(16, 24, 32, 0.58), rgba(16, 24, 32, 0.22), rgba(16, 24, 32, 0.00)),
+      url("../images/home-hero-sunny-optimized-mobile.jpg");
+  }
+
+  .about-hero {
+    background-image:
+      linear-gradient(90deg, rgba(16, 24, 32, 0.74), rgba(16, 24, 32, 0.46), rgba(16, 24, 32, 0.12)),
+      url("../images/about-hero-nord-metallics-optimized-mobile.jpg");
+  }
+
+  .projects-hero {
+    background-image: url("../images/projects-low-carbon-metallics-mobile.jpg");
+  }
+
+  .louisiana-hero {
+    background-image: url("../images/louisiana-ironhearth-optimized-mobile.jpg");
+  }
+
+  .strategic-focus-hero,
+  .strategy-hero {
+    background-image: url("../images/strategic-focus-hero-optimized-mobile.jpg");
+  }
+
+  .technology-solutions-hero {
+    background-image: url("../images/technology-solutions-hero-optimized-mobile.jpg");
+  }
+
+  .sustainability-hero {
+    background-image: url("../images/sustainability-new-optimized-mobile.jpg");
+  }
+
+  .strategic-relationships-hero {
+    background-image: url("../images/strategic-relationships-hero-optimized-mobile.jpg");
+  }
+
+  .investors-hero {
+    background-image: url("../images/investors-hero-optimized-mobile.jpg");
+  }
+
+  .news-hero {
+    background-image: url("../images/news-hero-optimized-mobile.jpg");
+  }
+
+  .contact-hero {
+    background-image: url("../images/contact-us-optimized-mobile.jpg");
+  }
+
+  .products-hero {
+    background-image: url("../images/products-hero-optimized-mobile.jpg");
+  }
+
+  .careers-hero {
+    background-image: url("../images/careers-new-optimized-mobile.jpg");
+  }
+
   .content {
     padding: 64px 6%;
   }
@@ -1477,6 +1534,18 @@ footer a:hover {
 
   .hero {
     padding: 80px 6%;
+  }
+
+  .home-hero,
+  .about-hero-copy,
+  .hero-copy {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .bird {
+    display: none;
   }
 
   .projects-hero,

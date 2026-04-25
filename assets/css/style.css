@@ -1073,7 +1073,7 @@ nav a:hover {
 footer {
   background: #000;
   color: #d8dfdd;
-  padding: 38px 8%;
+  padding: 38px 5%;
   font-size: 14px;
 }
 
@@ -1087,8 +1087,10 @@ footer a:hover {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(180px, 0.8fr) minmax(240px, 1fr) minmax(140px, 0.55fr) minmax(260px, 1fr);
-  gap: 28px;
+  max-width: 1120px;
+  margin: 0 auto;
+  grid-template-columns: minmax(180px, 220px) minmax(220px, 1fr) minmax(120px, 160px) minmax(220px, 280px);
+  gap: 24px;
   align-items: start;
 }
 

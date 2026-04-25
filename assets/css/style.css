@@ -1107,7 +1107,7 @@ footer a:hover {
 
 .footer-logo img {
   display: block;
-  width: 190px;
+  width: 225px;
   height: auto;
 }
 
@@ -1147,9 +1147,16 @@ footer a:hover {
   text-decoration: none;
 }
 
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 0 18px;
+}
+
 .footer-button {
   display: inline-block;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   padding: 11px 18px;
   border: 1px solid rgba(216, 223, 221, 0.4);
   border-radius: 4px;
@@ -1290,6 +1297,10 @@ footer a:hover {
   .footer-grid,
   .footer-links {
     grid-template-columns: 1fr;
+  }
+
+  .footer-actions {
+    align-items: flex-start;
   }
 
   .footer-social {

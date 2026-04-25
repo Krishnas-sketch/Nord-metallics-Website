@@ -1341,14 +1341,19 @@ footer a:hover {
 }
 
 .footer-nav-column {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
+  align-content: start;
 }
 
 .footer-nav-column .footer-heading {
+  grid-column: 2;
   margin-bottom: 12px;
 }
 
 .footer-nav-column .footer-link-grid {
+  grid-column: 1 / -1;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px 24px;
   align-items: start;

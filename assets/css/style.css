@@ -1333,18 +1333,17 @@ footer a:hover {
 
 .footer-nav-column {
   grid-column: span 2;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 18px;
-  align-content: start;
+  display: block;
 }
 
 .footer-nav-column .footer-heading {
-  grid-column: 2 / span 2;
+  margin-bottom: 12px;
 }
 
 .footer-nav-column .footer-link-grid {
-  grid-column: 1 / -1;
+  grid-template-columns: repeat(7, minmax(max-content, 1fr));
+  gap: 10px 16px;
+  align-items: start;
 }
 
 .footer-contact-column .footer-address-block {

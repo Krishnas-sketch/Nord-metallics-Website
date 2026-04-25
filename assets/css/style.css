@@ -1236,7 +1236,7 @@ footer a:hover {
   display: grid;
   max-width: 1240px;
   margin: 0 auto;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr) minmax(0, 0.8fr) minmax(220px, 1.15fr) minmax(0, 1.05fr);
   gap: 28px;
   align-items: start;
 }
@@ -1284,11 +1284,19 @@ footer a:hover {
 }
 
 .footer-link-grid a {
+  color: #d8dfdd;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
   font-weight: 400;
   text-decoration: none;
 }
 
 .footer-link-stack a {
+  color: #d8dfdd;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
   font-weight: 400;
   text-decoration: none;
 }
@@ -1329,10 +1337,10 @@ footer a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: -14px;
 }
 
 .footer-nav-column {
-  grid-column: span 2;
   display: block;
 }
 
@@ -1341,9 +1349,17 @@ footer a:hover {
 }
 
 .footer-nav-column .footer-link-grid {
-  grid-template-columns: repeat(7, minmax(max-content, 1fr));
-  gap: 10px 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 24px;
   align-items: start;
+}
+
+.footer-contact-column {
+  min-width: 0;
+}
+
+.footer-contact-column .footer-heading {
+  white-space: nowrap;
 }
 
 .footer-contact-column .footer-address-block {
@@ -1352,7 +1368,7 @@ footer a:hover {
 }
 
 .footer-brand-column .footer-contact-meta {
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 
 .footer-contact-item {
@@ -1458,7 +1474,6 @@ footer a:hover {
   }
 
   .footer-nav-column {
-    grid-column: auto;
     display: block;
   }
 

@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --brand-blue: #1492C3;
+  --brand-green: #8DC63F;
+  --brand-grey: #D1D3D4;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  border-bottom: 4px solid #1492c3;
+  border-bottom: 4px solid var(--brand-blue);
 }
 
 .header-right {
@@ -61,7 +67,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #1492c3;
+  color: var(--brand-blue);
 }
 
 .made-in-america-badge {
@@ -95,8 +101,8 @@ nav a:hover {
   min-width: 210px;
   padding: 10px 0;
   background: white;
-  border: 1px solid #dce3e1;
-  border-top: 3px solid #1492c3;
+  border: 1px solid var(--brand-grey);
+  border-top: 3px solid var(--brand-blue);
   box-shadow: 0 14px 32px rgba(16, 24, 32, 0.16);
   opacity: 0;
   visibility: hidden;
@@ -120,7 +126,7 @@ nav a:hover {
 
 .menu-toggle {
   display: none;
-  border: 1px solid #d2dcda;
+  border: 1px solid var(--brand-grey);
   border-radius: 4px;
   background: white;
   color: #4a5358;
@@ -146,7 +152,7 @@ nav a:hover {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(16, 24, 32, 0.58), rgba(16, 24, 32, 0.22), rgba(16, 24, 32, 0.00)),
-    url("../images/home-hero-sunny.png");
+    url("../images/home-hero-sunny-optimized.jpg");
   background-size: cover;
   background-position: center;
   animation: heroImageReveal 1.2s ease-out both;
@@ -171,7 +177,7 @@ nav a:hover {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(16, 24, 32, 0.74), rgba(16, 24, 32, 0.46), rgba(16, 24, 32, 0.12)),
-    url("../images/about-hero-nord-metallics.png");
+    url("../images/about-hero-nord-metallics-optimized.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -343,7 +349,7 @@ nav a:hover {
   min-height: 620px;
   overflow: hidden;
   background:
-    url("../images/projects-hero-new.png");
+    url("../images/projects-low-carbon-metallics.jpg");
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -772,7 +778,7 @@ nav a:hover {
 .button {
   display: inline-block;
   margin-top: 20px;
-  background: #1492c3;
+  background: var(--brand-blue);
   color: white;
   padding: 14px 24px;
   text-decoration: none;
@@ -781,7 +787,7 @@ nav a:hover {
 }
 
 .button:hover {
-  background: #0f7fa9;
+  background: var(--brand-blue);
 }
 
 .toggle-panel-trigger {
@@ -796,7 +802,7 @@ nav a:hover {
 .content {
   padding: 76px 8%;
   background: white;
-  border-bottom: 1px solid #e4e7e6;
+  border-bottom: 1px solid var(--brand-grey);
 }
 
 [id] {
@@ -829,8 +835,8 @@ nav a:hover {
 
 .feature-panel {
   background: #f7f9f9;
-  border: 1px solid #dce3e1;
-  border-top: 4px solid #1492c3;
+  border: 1px solid var(--brand-grey);
+  border-top: 4px solid var(--brand-blue);
   border-radius: 6px;
   padding: 28px;
 }
@@ -861,7 +867,7 @@ nav a:hover {
 
 .content-image-block {
   overflow: hidden;
-  border: 1px solid #dce3e1;
+  border: 1px solid var(--brand-grey);
   border-radius: 6px;
   background: #0a1d35;
 }
@@ -884,8 +890,8 @@ nav a:hover {
   margin-top: 10px;
   padding: 34px;
   background: #f7f9f9;
-  border: 1px solid #dce3e1;
-  border-top: 4px solid #1492c3;
+  border: 1px solid var(--brand-grey);
+  border-top: 4px solid var(--brand-blue);
   border-radius: 6px;
   box-shadow: 0 8px 24px rgba(16, 24, 32, 0.06);
 }
@@ -924,7 +930,7 @@ nav a:hover {
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  border: 1px solid #c9d3d1;
+  border: 1px solid var(--brand-grey);
   border-radius: 4px;
   padding: 15px 16px;
   color: #1f2933;
@@ -936,8 +942,8 @@ nav a:hover {
 .contact-form select {
   appearance: none;
   background-image:
-    linear-gradient(45deg, transparent 50%, #5b666b 50%),
-    linear-gradient(135deg, #5b666b 50%, transparent 50%);
+    linear-gradient(45deg, transparent 50%, var(--brand-grey) 50%),
+    linear-gradient(135deg, var(--brand-grey) 50%, transparent 50%);
   background-position:
     calc(100% - 18px) calc(50% - 3px),
     calc(100% - 12px) calc(50% - 3px);
@@ -949,7 +955,7 @@ nav a:hover {
 .contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #1492c3;
+  border-color: var(--brand-blue);
   box-shadow: 0 0 0 3px rgba(20, 146, 195, 0.14);
   background-color: #fff;
 }
@@ -984,8 +990,8 @@ nav a:hover {
 
 .info-card {
   background: white;
-  border: 1px solid #dce3e1;
-  border-top: 4px solid #97c91e;
+  border: 1px solid var(--brand-grey);
+  border-top: 4px solid var(--brand-green);
   border-radius: 6px;
   padding: 24px;
 }
@@ -1005,13 +1011,13 @@ nav a:hover {
 .info-card a {
   display: inline-block;
   margin-top: 16px;
-  color: #1492c3;
+  color: var(--brand-blue);
   font-weight: 700;
   text-decoration: none;
 }
 
 .info-card a:hover {
-  color: #0f7fa9;
+  color: var(--brand-blue);
 }
 
 .leadership-list {
@@ -1023,8 +1029,8 @@ nav a:hover {
 
 .leader-card {
   background: white;
-  border: 1px solid #dce3e1;
-  border-left: 5px solid #1492c3;
+  border: 1px solid var(--brand-grey);
+  border-left: 5px solid var(--brand-blue);
   border-radius: 6px;
   padding: 26px;
 }
@@ -1037,12 +1043,12 @@ nav a:hover {
 
 .leader-card .role {
   margin: 0 0 18px;
-  color: #1492c3;
+  color: var(--brand-blue);
   font-weight: 700;
 }
 
 .notice {
-  border-top: 4px solid #97c91e;
+  border-top: 4px solid var(--brand-green);
 }
 
 .eyebrow {
@@ -1061,7 +1067,7 @@ nav a:hover {
   content: "";
   width: 38px;
   height: 3px;
-  background: #1492c3;
+  background: var(--brand-blue);
 }
 
 .large-text {
@@ -1198,7 +1204,7 @@ footer a:hover {
     margin-left: 0;
     margin-top: 16px;
     padding-top: 12px;
-    border-top: 1px solid #e0e6e4;
+    border-top: 1px solid var(--brand-grey);
   }
 
   .site-header.nav-open nav {

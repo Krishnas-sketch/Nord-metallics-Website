@@ -1248,7 +1248,8 @@ footer a:hover {
 
 .footer-logo {
   display: inline-flex;
-  margin-bottom: 18px;
+  margin-top: -6px;
+  margin-bottom: 14px;
 }
 
 .footer-logo img {

@@ -1325,17 +1325,56 @@ footer a:hover {
 
 .footer-brand-column {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
 .footer-nav-column {
   grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 18px;
+  align-content: start;
+}
+
+.footer-nav-column .footer-heading {
+  grid-column: 2 / span 2;
+}
+
+.footer-nav-column .footer-link-grid {
+  grid-column: 1 / -1;
 }
 
 .footer-contact-column .footer-address-block {
   line-height: 1.4;
   margin-bottom: 8px;
+}
+
+.footer-brand-column .footer-contact-meta {
+  margin-bottom: 2px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #d8dfdd;
+  flex: 0 0 16px;
+}
+
+.footer-contact-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer-contact-column .footer-contact-meta {
@@ -1363,6 +1402,7 @@ footer a:hover {
 
   .footer-nav-column {
     grid-column: auto;
+    display: block;
   }
 
   .footer-link-grid {

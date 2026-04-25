@@ -528,6 +528,22 @@ nav a:hover {
   background-color: #00192f;
 }
 
+.contact-hero-email-link {
+  position: absolute;
+  left: 8.1%;
+  top: 53.2%;
+  width: 21.8%;
+  height: 5%;
+  z-index: 3;
+  border-radius: 6px;
+}
+
+.contact-hero-email-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(20, 146, 195, 0.45);
+}
+
 .products-hero,
 .strategy-hero,
 .careers-hero {
@@ -1237,13 +1253,13 @@ footer a:hover {
 
 .footer-logo img {
   display: block;
-  width: min(100%, 225px);
+  width: min(100%, 185px);
   height: auto;
 }
 
 .footer-column p {
-  margin: 0 0 12px;
-  line-height: 1.7;
+  margin: 0 0 10px;
+  line-height: 1.55;
 }
 
 .footer-heading {
@@ -1251,12 +1267,13 @@ footer a:hover {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.01em;
+  min-height: 22px;
 }
 
 .footer-link-stack {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .footer-link-stack a {
@@ -1293,6 +1310,16 @@ footer a:hover {
 .contact-form p,
 .form-actions {
   text-align: left;
+}
+
+.footer-brand-column {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-contact-column .footer-address-block {
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 1080px) {
@@ -1409,6 +1436,13 @@ footer a:hover {
   .hero p {
     font-size: 1rem;
     line-height: 1.7;
+  }
+
+  .contact-hero-email-link {
+    left: 8%;
+    top: 53%;
+    width: 26%;
+    height: 6%;
   }
 
   .careers-hero-email-link {

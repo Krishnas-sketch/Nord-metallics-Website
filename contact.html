@@ -51,7 +51,11 @@
     </div>
   </header>
 
-  <section class="hero contact-hero"></section>
+  <section class="hero contact-hero">
+    <a class="contact-hero-email-link" href="mailto:info@nordmetallics.com" aria-label="Email Nord Metallics at info@nordmetallics.com">
+      <span class="sr-only">Email Nord Metallics</span>
+    </a>
+  </section>
 
   <section class="content">
     <h2>Get in Touch</h2>
@@ -60,8 +64,11 @@
   </section>
 
   <section class="content contact-layout">
-    <form class="contact-form" name="contact" action="thank-you.html" method="post" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
+    <form class="contact-form" action="https://formsubmit.co/info@nordmetallics.com" method="post">
+      <input type="hidden" name="_subject" value="Nord Metallics Website Inquiry">
+      <input type="hidden" name="_next" value="https://krishnas-sketch.github.io/Nord-metallics-Website/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
       <div class="form-header full-width">
         <h3>Send an Inquiry</h3>
         <p>Please provide your details and the most relevant inquiry category so the right team can respond.</p>
@@ -114,14 +121,10 @@
 
   <footer>
     <div class="footer-grid">
-      <div class="footer-column footer-company">
+      <div class="footer-column footer-brand-column">
         <a class="footer-logo" href="index.html">
           <img src="assets/images/logo-black.png" alt="Nord Metallics logo" loading="lazy" width="540" height="270">
         </a>
-        <p class="footer-heading">Contact Information</p>
-        <p>Nord Metallics<br>201 Rue Beauregard Ste 202<br>Lafayette, LA 70508<br>United States</p>
-        <p>Phone: <a href="tel:+16126664524">+1 (612) 666-4524</a></p>
-        <p>Email: <a href="mailto:info@nordmetallics.com">info@nordmetallics.com</a></p>
       </div>
       <div class="footer-column">
         <p class="footer-heading">Navigate</p>
@@ -140,16 +143,17 @@
           <a href="#">LinkedIn</a>
         </div>
       </div>
+      <div class="footer-column footer-contact-column">
+        <p class="footer-heading">Contact Information</p>
+        <p class="footer-address-block">Nord Metallics<br>201 Rue Beauregard Ste 202<br>Lafayette, LA 70508<br>United States</p>
+        <p>Phone: <a href="tel:+16126664524">+1 (612) 666-4524</a></p>
+        <p>Email: <a href="mailto:info@nordmetallics.com">info@nordmetallics.com</a></p>
+      </div>
       <div class="footer-column">
-        <p class="footer-heading">&nbsp;</p>
+        <p class="footer-heading">Code of Conduct</p>
         <div class="footer-link-stack">
           <a href="contact.html">Contact</a>
           <a href="careers.html">Careers</a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <p class="footer-heading">&nbsp;</p>
-        <div class="footer-link-stack">
           <a class="footer-button" href="assets/docs/the-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Code of Conduct</a>
           <a class="footer-button" href="assets/docs/supplier-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">Supplier Code of Conduct</a>
         </div>

@@ -17,7 +17,13 @@
       <button class="menu-toggle" type="button" aria-label="Open navigation">Menu</button>
       <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <div class="nav-dropdown">
+        <a class="nav-parent" href="about.html" aria-haspopup="true">About Us</a>
+        <div class="nav-dropdown-menu">
+          <a href="about.html#corporate-governance">Corporate Governance</a>
+          <a href="about.html#corporate-logo">Corporate Logo</a>
+        </div>
+      </div>
       <div class="nav-dropdown">
         <a class="nav-parent" href="projects.html" aria-haspopup="true">Projects</a>
         <div class="nav-dropdown-menu">

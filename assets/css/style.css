@@ -244,6 +244,10 @@ nav a:hover {
     linear-gradient(90deg, rgba(16, 24, 32, 0.58), rgba(16, 24, 32, 0.22), rgba(16, 24, 32, 0));
 }
 
+.home-hero .home-hero-title {
+  color: var(--brand-blue);
+}
+
 .about-hero {
   position: relative;
   min-height: 500px;
@@ -273,7 +277,7 @@ nav a:hover {
 
 .about-hero-copy h2 {
   margin: 18px 0 22px;
-  color: white;
+  color: var(--brand-blue);
   font-size: clamp(2.2rem, 4vw, 3rem);
   line-height: 1.12;
   font-weight: 800;
@@ -373,6 +377,10 @@ nav a:hover {
   box-shadow: 0 10px 24px rgba(16, 24, 32, 0.08);
 }
 
+.about-followup-section {
+  padding-top: 42px;
+}
+
 .about-resource-layout {
   align-items: stretch;
 }
@@ -398,6 +406,11 @@ nav a:hover {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   margin-top: 28px;
+}
+
+.logo-showcase-compact {
+  grid-template-columns: 1fr;
+  margin-top: 0;
 }
 
 .logo-card {
@@ -604,7 +617,7 @@ nav a:hover {
   min-height: 620px;
   overflow: hidden;
   background:
-    url("../images/investors-hero-optimized.jpg");
+    url("../images/investors-hero-new.png");
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -672,7 +685,7 @@ nav a:hover {
 }
 
 .careers-hero {
-  background-image: url("../images/careers-new-optimized.jpg");
+  background-image: url("../images/careers-hero-new.png");
 }
 
 .careers-hero-email-link {
@@ -1548,7 +1561,7 @@ footer a:hover {
   }
 
   .investors-hero {
-    background-image: url("../images/investors-hero-optimized-mobile.jpg");
+    background-image: url("../images/investors-hero-new.png");
   }
 
   .news-hero {
@@ -1564,7 +1577,7 @@ footer a:hover {
   }
 
   .careers-hero {
-    background-image: url("../images/careers-new-optimized-mobile.jpg");
+    background-image: url("../images/careers-hero-new.png");
   }
 
   .content {

@@ -342,6 +342,113 @@ nav a:hover {
   height: auto;
 }
 
+.about-subnav-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.about-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.about-subnav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: 1px solid rgba(20, 146, 195, 0.24);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff, #eef6f8);
+  color: #11355c;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.about-subnav-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(20, 146, 195, 0.48);
+  box-shadow: 0 10px 24px rgba(16, 24, 32, 0.08);
+}
+
+.about-resource-layout {
+  align-items: stretch;
+}
+
+.about-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button-secondary {
+  background: #f2f6f7;
+  color: #11355c;
+}
+
+.button-secondary:hover {
+  background: #ddebef;
+}
+
+.logo-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.logo-card {
+  background: white;
+  border: 1px solid var(--brand-grey);
+  border-top: 4px solid var(--brand-blue);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.logo-card h3 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #101820;
+}
+
+.logo-card p {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.logo-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  margin-bottom: 18px;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+.logo-frame img {
+  display: block;
+  max-width: min(100%, 320px);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-frame-light {
+  background:
+    radial-gradient(circle at top left, rgba(141, 198, 63, 0.18), transparent 42%),
+    linear-gradient(180deg, #f7faf9, #eef4f4);
+}
+
+.logo-frame-dark {
+  background:
+    radial-gradient(circle at top right, rgba(20, 146, 195, 0.28), transparent 38%),
+    linear-gradient(180deg, #1f2933, #101820);
+}
+
 
 .hero-copy {
   position: relative;
@@ -1464,6 +1571,14 @@ footer a:hover {
     padding: 64px 6%;
   }
 
+  .logo-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-frame {
+    min-height: 180px;
+  }
+
   .content p,
   .feature-panel p,
   .feature-panel li,
@@ -1635,6 +1750,16 @@ footer a:hover {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-subnav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-subnav-link,
+  .about-resource-links .button {
+    width: 100%;
   }
 
   .feature-section,

@@ -381,6 +381,17 @@ nav a:hover {
   padding-top: 42px;
 }
 
+.about-governance-copy,
+#corporate-governance ol,
+#corporate-governance p {
+  max-width: none;
+  text-align: justify;
+}
+
+#corporate-governance ol {
+  padding-left: 24px;
+}
+
 .about-resource-layout {
   align-items: stretch;
 }
